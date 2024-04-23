@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&display=swap');
+
+.bg {
+  background: radial-gradient(
+    circle,
+    rgba(206, 238, 236, 1) 0%,
+    rgba(148, 200, 233, 1) 98%
+  );
+  font-size: larger;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+
+.title {
+  font-family: "Lobster", sans-serif;
+  color: blue;
+  text-align: center;
+}
+
+.steps{
+    border: medium dashed rgb(182, 225, 221);
+    color: gray;
+}
+
+.aboutme{
+    color: grey;
+    text-align: center;
+}
