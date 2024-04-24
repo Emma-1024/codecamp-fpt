@@ -1,29 +1,315 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&display=swap');
-
-.bg {
-  background: radial-gradient(
-    circle,
-    rgba(206, 238, 236, 1) 0%,
-    rgba(148, 200, 233, 1) 98%
-  );
-  font-size: larger;
-  font-family: "Caveat", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Color+Emoji&family=Silkscreen:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("https://wallpaperswide.com/download/desk_8-wallpaper-1920x1280.jpg");
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  color: #444141;
+  font-size: 1.4rem;
+  font-family: "Chakra Petch", sans-serif;
   font-weight: 700;
+}
+
+.main {
+  padding: 0 20px;
 }
 
 .title {
   font-family: "Lobster", sans-serif;
-  color: blue;
+  color: #444141;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.nav {
+  padding: 0 10px;
+  height: 4rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    0deg,
+    rgba(222, 222, 225, 1) 0%,
+    rgba(246, 243, 241, 1) 87%
+  );
+}
+
+.circle {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #0761d6;
+}
+
+#me {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bolder;
+  color: #444141;
+  text-decoration: none;
   text-align: center;
 }
 
-.steps{
-    border: medium dashed rgb(182, 225, 221);
-    color: gray;
+#me:hover {
+  color: #0761d6;
+  cursor: pointer;
 }
 
-.aboutme{
-    color: grey;
-    text-align: center;
+.category {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+}
+.category li {
+  border-right: 2px solid white;
+  padding: 0 10px;
+}
+
+.category li:last-child {
+  border-right: 0;
+}
+
+.category li a {
+  text-decoration: none;
+  border-right: 1px rgb(244, 244, 250);
+  color: #444141;
+  text-align: center;
+}
+.category a:hover {
+  color: #0761d6;
+}
+
+section {
+  padding: 20px 0;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-family: "Caveat", cursive;
+}
+.about-section img {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  display: inline-block;
+}
+
+.aboutme {
+  width: 50%;
+}
+
+.aboutme span {
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.aboutme p:last-child {
+  color: #0761d6;
+  text-shadow: 10px 10px 5px rgb(131, 157, 211);
+  /* font-size: 2rem; */
+}
+
+.eye {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.eye img {
+  width: 100%;
+  height: 100%;
+}
+.tiptext {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  visibility: hidden;
+  font-size: small;
+  color: white;
+}
+.eye:hover .tiptext {
+  visibility: visible;
+}
+
+.news-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 100px;
+}
+
+.news-section h1 {
+  color: white;
+  padding: 10px;
+}
+
+.entertainments-session {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 100px;
+}
+
+.news-section img {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+}
+
+.entertainments-session img {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+}
+.entertainments-session h1 {
+  color: white;
+  padding: 10px;
+}
+
+.news-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* border: 1px solid rgb(93, 93, 127); */
+  /* padding: 10px; */
+  gap: 10px;
+}
+.entertainment-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.news-grid-container a {
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #444141;
+  border-radius: 10%;
+  background-color: rgb(200, 199, 198);
+}
+
+.entertainment-grid-container a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #444141;
+}
+
+.news-grid-container a:hover {
+  color: #0761d6;
+  background-color: white;
+}
+
+.entertainment-grid-container a:hover {
+  color: #0761d6;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: white;
+}
+.footer {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.footer h3 {
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 5px;
+}
+.footer span {
+  color: #444141;
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+  .about-section {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 0;
+  }
+  .aboutme {
+    width: auto;
+  }
+  .about-section img {
+    width: 18rem;
+    height: 18rem;
+  }
+  .news-section img {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .entertainments-session img {
+    width: 18rem;
+    height: 18rem;
+  }
+  .news-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .entertainments-session {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 481px) {
+  body {
+    font-size: 1rem;
+  }
+  .about-section img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .news-section img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .entertainments-session img {
+    width: 10rem;
+    height: 10rem;
+  }
 }

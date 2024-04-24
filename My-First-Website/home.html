@@ -6,108 +6,122 @@
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
-  <body class="bg">
+  <body>
     <header>
       <h1 class="title">Welcome to emma's website!</h1>
-      <p style="color: cadetblue">
-        Currently, this website is in its original state with no design or
-        colorful elements. It resembles a blank canvas, and we look forward to
-        seeing how it will <strong><em>evolve and transform!</em></strong
-        >👀
-      </p>
-      <div class="steps">
-        <p>
-          The step one: This is a fully HTML website that has a simple and
-          practical appearance, similar to a
-          <a
-            href="https://en.wikipedia.org/wiki/Wiki"
-            target="_blank"
-            style="text-decoration: none"
-            >Wiki</a
-          >.
-        </p>
-        <p>
-          The step two: And then I add css style to improve it's appearance!
-        </p>
-      </div>
     </header>
-    <main>
-      <nav>
-        <h2>Home</h2>
-        <ul>
-          <li><a href="#section1">News</a></li>
-          <li><a href="#section2">Entertainments</a></li>
-          <li><a href="#section3">About me</a></li>
-        </ul>
-      </nav>
-      <hr />
-      <section>
-        <h3><a id="section1"></a>News</h3>
-        <img
-          src="./images/news.jpg"
-          alt="this is a new image"
-          height="100px"
-          width="100px"
-        />
-        <ol>
-          <li><a href="https://www.cbc.ca/" target="_blank">CBC</a></li>
-          <li><a href="https://www.bbc.com/" target="_blank">BBC</a></li>
-          <li><a href="https://abcnews.go.com/" target="_blank">ABC</a></li>
-        </ol>
+    <nav class="nav">
+      <a id="me" href="#">
+        <span class="circle"></span>
+        <span>Emma Wu</span>
+      </a>
+      <ul class="category">
+        <li><a href="#">About me</a></li>
+        <li><a href="#section1">News</a></li>
+        <li><a href="#section2">Entertainments</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <section class="about-section">
+        <article class="aboutme">
+          <h1>Hello, I'm emma.</h1>
+          <!-- <h4>I'm emma. So delighted that you're visiting my website.</h3> -->
+          <span>My hobbies: </span>
+          <p>
+            Sometimes, I enjoy being outdoors, ✈️ traveling the world with
+            friends, experiencing the beauty of nature 🏞️ , and capturing
+            special moments through photography 📸 during each trip. I also have
+            a fondness for hiking 🥾 and playing badminton 🏸. Other times, I
+            prefer being indoors. I find contentment in sitting in front of the
+            computer 💻, listening to music 🎧, and watching talk 🎙️ shows and
+            movies🍿.
+          </p>
+          <span>My purpose: </span>
+          <p>
+            I have a passion for coding, even though computer science isn't my
+            major. I hope to land a job as a software engineer in Canada 🇨🇦 . In
+            addition to continuing to learn front-end and back-end technologies,
+            I also aim to enhance my English skills.
+          </p>
+          <span>My motto: </span>
+          <p>'What doesn't kill you makes you stronger'</p>
+        </article>
+        <img src="./images/aboutme.jpg" alt="this is a aboutme image" />
       </section>
       <hr />
-      <section>
-        <h3><a id="section2">Entertainments</a></h3>
-        <img
-          src="./images/entertainment.jpg"
-          alt="this is a intertainment image"
-          height="100px"
-          width="100px"
-        />
-        <ol>
-          <li>
-            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
-          </li>
-          <li><a href="https://gem.cbc.ca/" target="_blank">CBC Gem</a></li>
-        </ol>
-      </section>
-      <hr />
-      <section>
-        <h3><a id="section3">About me</a></h3>
-        <img
-          src="./images/aboutme.jpg"
-          alt="this is a aboutme image"
-          height="100px"
-          width="100px"
-        />
-        <div class="aboutme">
-          <p>Hi, I'm emma. I am delighted that you have visited my website.</p>
 
-          <div>
-            <p>
-              Sometimes, I enjoy being outdoors, ✈️traveling the world with
-              friends, experiencing the beauty of nature🏞️, and capturing
-              special moments through photography📸 during each trip. I also
-              have a fondness for hiking🥾 and playing badminton🏸. Other times,
-              I prefer being indoors. I find contentment in sitting in front of
-              the computer💻, listening to music🎧, and watching talk🎙️ shows
-              and movies🍿.
-            </p>
-            <p>
-              I have a passion for coding, even though computer science isn't my
-              major. I hope to find a job as a software engineer in Canada. In
-              addition to continuing to learn front-end and back-end
-              technologies, I also aim to enhance my English skills.
-            </p>
+      <section class="news-section">
+        <a id="section1">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/11/06/15/13/news-1028791_960_720.jpg"
+            alt="this is a new image"
+          />
+        </a>
+        <div>
+          <h1>Follow here to know what's happening every day</h1>
+          <div class="news-grid-container">
+            <a href="https://www.cbc.ca/" target="_blank">CBC</a>
+            <a href="https://www.bbc.com/" target="_blank">BBC</a>
+            <a href="https://abcnews.go.com/" target="_blank">ABC</a>
           </div>
-
-          <h4 style="color: cadetblue">
-            My motto in life is
-            <em>'What doesn't kill you makes you stronger'</em>
-          </h4>
         </div>
       </section>
+      <hr />
+
+      <section class="entertainments-session">
+        <div>
+          <h1>Have fun with these applications</h1>
+          <div class="entertainment-grid-container">
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+            <a href="https://gem.cbc.ca/" target="_blank">CBC Gem</a>
+          </div>
+        </div>
+        <a id="section2">
+          <img
+            src="./images/entertainment.jpg"
+            alt="this is a intertainment image"
+            height="100px"
+            width="100px"
+          />
+        </a>
+      </section>
     </main>
-    <footer></footer>
+    <hr />
+    <footer>
+      <div class="footer">
+        <div>
+          <h3>Follow Me</h3>
+          <div>
+            <a href=""
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png"
+                alt="linkedin"
+            /></a>
+            <a href="https://github.com/Emma-1024/codecamp-fpt" target="_blank">
+              <img
+                src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png"
+                alt="github"
+              />
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3>Email</h3>
+          <span>emma.wu.1024@gmail.com</span>
+        </div>
+        <div>
+          <h3>Phone</h3>
+          <span>123-456-789</span>
+        </div>
+      </div>
+      <span>&copy; 2024 By Emma Wu. All rights reserved</span>
+    </footer>
+    <a class="eye" href="#">
+      <img
+        src="https://static.wixstatic.com/media/84770f_6b2c2b854bc54ae696a5dc7c11837879~mv2.gif"
+        alt="eye gif"
+      />
+      <span class="tiptext">Go to the top</span>
+    </a>
   </body>
 </html>
